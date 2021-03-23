@@ -19,11 +19,11 @@ gem install bundler
 
 ## instructions
 
-1. clone this repo or [download as a zip file](https://github.com/getaaron/vaccine-spotter/archive/refs/heads/main.zip)
-2. `bundle`
+1. clone this repo or [download as a .zip file](https://github.com/getaaron/vaccine-spotter/archive/refs/heads/main.zip)
+2. from the `vaccine-spotter` directory, run `bundle` to install dependencies
 3. open `vaccine.rb` in any text editor
 4. edit `state` to your state's 2-letter code like `CA`, `IL`, `NY`, `FL`, etc.
 5. edit `closest_zip` to zip code where you live
 6. edit `zips_i_want` to an array of zips; you'll be alerted if there's a vaccine in any of them
 7. run `bundle exec ruby vaccine.rb`
-8. make sure your volume is up so you can hear the beeps
+8. make sure your volume is ALL THE WAY UP so you can hear the beeps even if you're sleeping
