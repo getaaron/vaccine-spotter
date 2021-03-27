@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'httparty'
-require 'open-uri'
 require 'json'
 require 'os'
 
@@ -20,7 +19,7 @@ while true
   # find matches to county_zips AND appointments_available: true -- remove && properties['provider_brand_id'] == 40 if you want other providers than Rite Aid
   matches = features.select { |feature|
     properties = feature['properties']
-    zips.include?(properties['postal_code']) && properties['appointments_available'] == true && properties['provider_brand_id'] == 40
+    zips.include?(properties['postal_code']) && properties['appointments_available'] == true
   }
   # if there are any matches, show the pertinent details
   if matches.count > 0
