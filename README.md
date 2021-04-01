@@ -3,7 +3,7 @@
 - Checks [COVID-19 Vaccine Spotter](https://www.vaccinespotter.org) for COVID-19 vaccine appointments
 - Beeps a bunch when it finds one
 
-## prerequisites
+## Prerequisites
 
 You need to have Ruby:
 
