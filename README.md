@@ -33,7 +33,8 @@ gem install bundler
       ```
    On macOS, if you don't know the exact path, you can just type `cd ` and then drag the folder from Finder into the Terminal window, then press return
 1. Run `bundle` to install dependencies
-1. `bundle exec ruby vaccine.rb --state <state code> --zipcodes <list of zipcodes>` (for example `bundle exec ruby vaccine.rb --state CA --zipcodes 94022,94024`)
+1. Run `bundle exec ruby vaccine.rb --state <state code> --zipcodes <list of zipcodes>` to start
+     > **Example**: `bundle exec ruby vaccine.rb --state CA --zipcodes 94022,94024`
      - `state` is the 2 letter abbreviation (examples: `CA`, `NY`, `IL`, etc)
      - `zipcodes` is a comma-separated list of zip codes, and you'll be alerted if there's a vaccine in any of them
 1. Make sure your volume is ALL THE WAY UP so you can hear the beeps even if you're sleeping
