@@ -43,7 +43,7 @@ def main
 end
 
 def poll(options)
-  vs_url = 'https://www.vaccinespotter.org/api/v0/states/' + options[:state] + '.json'
+  vs_url = "https://www.vaccinespotter.org/api/v0/states/#{options[:state]}.json"
   puts "Using endpoint: #{vs_url}" if options[:verbose]
 
   loop do
@@ -76,7 +76,7 @@ end
 def print_match(properties)
   puts properties['name']
   puts properties['address']
-  puts properties['city'] + ' ' + properties['state'] + ' ' + properties['postal_code'] + "\n"
+  puts "#{properties['city']}, #{properties['state']}, #{properties['postal_code']}\n"
   puts properties['url']
 end
 
